@@ -1,0 +1,131 @@
+body {
+	text-align: center;
+}
+input {
+	margin: auto;
+}
+img {
+	width: 200px;
+}
+a {
+	display: block;
+	margin: 1px 0;
+}
+#floating {
+	position: fixed;
+	display: block;
+	right: 0;
+	bottom: 0;
+	margin-right: 40px;
+	margin-bottom: 40px;
+	z-index: 900;
+}
+#vertical {
+	position: relative;
+	display: inline-block;
+	vertical-align: middle;
+}
+.list {
+  list-style: none;
+}
+/*.rating > i:hover:before {
+   content: "\2605";
+   position: absolute;
+}
+.rating {
+  unicode-bidi: bidi-override;
+  direction: rtl;
+}
+.rating > i:hover:before,
+.rating > i:hover ~ i:before {
+   content: "\2605";
+   position: absolute;
+}
+.rating > i {
+  display: inline-block;
+  position: relative;
+  width: 1.1em;
+}*/
+/*
+  Ratings Stars
+  (with as little code as possible)
+*/
+.rating {
+  unicode-bidi: bidi-override;
+  direction: rtl;
+  text-align: center;
+}
+.rating > i {
+  display: inline-block;
+  position: relative;
+  width: 1.1em;
+}
+.rating > i:hover,
+.rating > i:hover ~ i {
+  color: transparent;
+}
+.rating > i:hover:before,
+.rating > i:hover ~ i:before {
+   content: "\2605";
+   position: absolute;
+   left: 0; 
+   color: #FFC107;
+}
+/*body { padding: 100px; }*/
+.green {
+	background-color: #009688;
+	color: #fff;
+}
+.green:hover {
+	background-color: #00897B;
+	color: #fff;
+}
+.btn-group-vertical {
+	vertical-align: middle;
+}
+@font-face {
+  font-family: 'Material Icons';
+  font-style: normal;
+  font-weight: 400;
+  src: url(../bower_components/material-design-icons/iconfont/MaterialIcons-Regular.eot); /* For IE6-8 */
+  src: local('Material Icons'),
+       local('MaterialIcons-Regular'),
+       url(../bower_components/material-design-icons/iconfont/MaterialIcons-Regular.woff2) format('woff2'),
+       url(../bower_components/material-design-icons/iconfont/MaterialIcons-Regular.woff) format('woff'),
+       url(../bower_components/material-design-icons/iconfontMaterialIcons-Regular.ttf) format('truetype');
+}
+.material-icons {
+  font-family: 'Material Icons';
+  font-weight: normal;
+  font-style: normal;
+  font-size: 24px;  /* Preferred icon size */
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  line-height: 1;
+  text-transform: none;
+  letter-spacing: normal;
+  word-wrap: normal;
+  white-space: nowrap;
+  direction: ltr;
+
+  /* Support for all WebKit browsers. */
+  -webkit-font-smoothing: antialiased;
+  /* Support for Safari and Chrome. */
+  text-rendering: optimizeLegibility;
+
+  /* Support for Firefox. */
+  -moz-osx-font-smoothing: grayscale;
+
+  /* Support for IE. */
+  font-feature-settings: 'liga';
+}
+#contact {
+    width: 50%;
+    margin: 0 auto;
+}
+i.icon {
+  font-size: 20px;
+  color: #009688;
+  /*box-shadow: 3px 3px 1px gray;*/
+}

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+  <widget
+    id="com.mercysmart.cekbpjs"
+    version="1.0" >
+    <name>CekBPJS</name>
+    <description>Jembatan Penghubung Anda dan RS Rujukan BPJS</description>
+    <author href="http://mercysmart.github.io">
+      MercySmart
+    </author>
+    <icon src="img/icon.png" />
+    <!-- <gap:splash src="img/splash.png" /> -->
+  </widget>
